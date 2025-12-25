@@ -1,198 +1,252 @@
 const employees = [
   {
     id: 1,
+    name: "Rahul",
     email: "employee1@example.com",
     password: "123",
+
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0
+    },
+
     tasks: [
       {
+        taskTitle: "UI Design",
+        taskDescription: "Design user interface for the dashboard screen",
+        category: "Design",
+        date: "2025-12-20",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        title: "Prepare Report",
-        description: "Prepare monthly sales report",
-        date: "2025-01-05",
-        category: "Reports"
+        failed: false
       },
       {
+        taskTitle: "Fix Navbar",
+        taskDescription: "Resolve alignment issues in navbar",
+        category: "Frontend",
+        date: "2025-12-21",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false
+      },
+      {
+        taskTitle: "Testing",
+        taskDescription: "Test UI responsiveness",
+        category: "Testing",
+        date: "2025-12-22",
         active: false,
         newTask: false,
         completed: true,
-        failed: false,
-        title: "Client Call",
-        description: "Call client for project update",
-        date: "2025-01-03",
-        category: "Communication"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: false,
-        failed: true,
-        title: "Data Entry",
-        description: "Enter customer data",
-        date: "2025-01-02",
-        category: "Data"
+        failed: false
       }
     ]
   },
+
   {
     id: 2,
+    name: "Anjali",
     email: "employee2@example.com",
     password: "123",
+
+    taskCount: {
+      active: 1,
+      newTask: 2,
+      completed: 0,
+      failed: 1
+    },
+
     tasks: [
       {
+        taskTitle: "API Integration",
+        taskDescription: "Integrate backend APIs with frontend",
+        category: "Backend",
+        date: "2025-12-18",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        title: "Design UI",
-        description: "Create dashboard UI",
-        date: "2025-01-06",
-        category: "Design"
+        failed: false
       },
       {
+        taskTitle: "Auth API",
+        taskDescription: "Connect login API",
+        category: "Backend",
+        date: "2025-12-19",
         active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        title: "Fix Bugs",
-        description: "Resolve login bugs",
-        date: "2025-01-04",
-        category: "Development"
+        newTask: true,
+        completed: false,
+        failed: false
       },
       {
+        taskTitle: "Error Handling",
+        taskDescription: "Fix API error handling",
+        category: "Bug Fix",
+        date: "2025-12-20",
         active: false,
         newTask: false,
         completed: false,
-        failed: true,
-        title: "API Test",
-        description: "Test user APIs",
-        date: "2025-01-01",
-        category: "Testing"
+        failed: true
       }
     ]
   },
+
   {
     id: 3,
+    name: "Mohit",
     email: "employee3@example.com",
     password: "123",
+
+    taskCount: {
+      active: 0,
+      newTask: 1,
+      completed: 2,
+      failed: 0
+    },
+
     tasks: [
       {
-        active: true,
+        taskTitle: "Dashboard Layout",
+        taskDescription: "Create main dashboard layout",
+        category: "Frontend",
+        date: "2025-12-15",
+        active: false,
         newTask: true,
         completed: false,
-        failed: false,
-        title: "Write Content",
-        description: "Write blog post",
-        date: "2025-01-07",
-        category: "Content"
+        failed: false
       },
       {
+        taskTitle: "Charts",
+        taskDescription: "Add charts using chart library",
+        category: "Frontend",
+        date: "2025-12-16",
         active: false,
         newTask: false,
         completed: true,
-        failed: false,
-        title: "SEO Update",
-        description: "Update SEO keywords",
-        date: "2025-01-05",
-        category: "Marketing"
+        failed: false
       },
       {
+        taskTitle: "Sidebar",
+        taskDescription: "Implement sidebar navigation",
+        category: "Frontend",
+        date: "2025-12-17",
         active: false,
         newTask: false,
-        completed: false,
-        failed: true,
-        title: "Campaign Review",
-        description: "Review ad campaign",
-        date: "2025-01-02",
-        category: "Marketing"
+        completed: true,
+        failed: false
       }
     ]
   },
+
   {
     id: 4,
+    name: "Pooja",
     email: "employee4@example.com",
     password: "123",
+
+    taskCount: {
+      active: 1,
+      newTask: 1,
+      completed: 0,
+      failed: 2
+    },
+
     tasks: [
       {
+        taskTitle: "Logo Design",
+        taskDescription: "Create modern logo",
+        category: "Design",
+        date: "2025-12-10",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        title: "Inventory Check",
-        description: "Check stock levels",
-        date: "2025-01-06",
-        category: "Operations"
+        failed: false
       },
       {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        title: "Order Processing",
-        description: "Process pending orders",
-        date: "2025-01-04",
-        category: "Operations"
-      },
-      {
+        taskTitle: "Color Palette",
+        taskDescription: "Choose brand colors",
+        category: "Design",
+        date: "2025-12-11",
         active: false,
         newTask: false,
         completed: false,
-        failed: true,
-        title: "Supplier Call",
-        description: "Call supplier for delay",
-        date: "2025-01-01",
-        category: "Communication"
+        failed: true
+      },
+      {
+        taskTitle: "Typography",
+        taskDescription: "Finalize font styles",
+        category: "Design",
+        date: "2025-12-12",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true
       }
     ]
   },
+
   {
     id: 5,
+    name: "Aman",
     email: "employee5@example.com",
     password: "123",
+
+    taskCount: {
+      active: 3,
+      newTask: 2,
+      completed: 1,
+      failed: 0
+    },
+
     tasks: [
       {
+        taskTitle: "Backend APIs",
+        taskDescription: "Develop REST APIs using Node.js",
+        category: "Backend",
+        date: "2025-12-05",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        title: "Code Review",
-        description: "Review team code",
-        date: "2025-01-08",
-        category: "Development"
+        failed: false
       },
       {
-        active: false,
+        taskTitle: "JWT Auth",
+        taskDescription: "Implement JWT authentication",
+        category: "Security",
+        date: "2025-12-06",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false
+      },
+      {
+        taskTitle: "Database Schema",
+        taskDescription: "Design MongoDB schema",
+        category: "Database",
+        date: "2025-12-07",
+        active: true,
         newTask: false,
         completed: true,
-        failed: false,
-        title: "Deploy App",
-        description: "Deploy latest build",
-        date: "2025-01-05",
-        category: "Deployment"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: false,
-        failed: true,
-        title: "Server Setup",
-        description: "Configure server",
-        date: "2025-01-02",
-        category: "Infrastructure"
+        failed: false
       }
     ]
   }
 ];
 
+
+
 const admin = [
   {
     id: 101,
+    name: "Admin",
     email: "admin@example.com",
     password: "123"
   }
 ];
+
+
 
 
 export const setLocalStorage = () =>{
@@ -203,6 +257,5 @@ export const setLocalStorage = () =>{
 export const getLocalStorage = () =>{
     const employees =JSON.parse(localStorage.getItem('employees'))
    const admin =JSON.parse(localStorage.getItem('admin'))
-   console.log(employees,admin)
-
+  return {employees,admin}
 }
